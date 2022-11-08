@@ -1,27 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 5 Website Example</title>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link 
-6
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
-rel="stylesheet">
-  <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.j
-s"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
 
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-  <a> Home <div class="dropdown-menu"> Account
-  <a class="dropdown-item" href="#">Sign in</a>
-  <a class="dropdown-item active" href="#">Sign up</a>
-</div></a>
+/*beginning of defining classes for navbar*/
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #303030;
+  font-family:Verdana, sans-serif;
+}
 
-</nav>
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px 14px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+/* Add a gray background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: dimgray;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a blue background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: lightsteelblue;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end of styling classes for navbar*/
+
+/* beginning of styling classes for introduction */
+.headingstyle{
+  text-align: center;
+  font-size: 16 px;
+  color: #303030;
+  font-family:Verdana, sans-serif;
+  
+}
+
+.paragraphstyle{
+  font-size: 13 px;
+  color: #303030;
+  font-family:Verdana, sans-serif;
+}
+
+tab1 { padding-left: 4em; }
+/* end of styling classes for introduction */
+
+</style>
 </head>
 <body>
-<p> Put your HTML using Bootstrap CSS
+<div class="navbar">
+  <a class = "navbar a" href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Account
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Sign in</a>
+      <a href="#">Sign up</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+<h1 class = "headingstyle"> Emily Ng </h1>
+
+<p class = "paragraphstyle">
+  <tab1>Determined, detail-oriented, and adaptable <a title = "More about the degree" href ="https://eas.uccs.edu/cs/academics/graduate-programs/master-of-science-in-computer-science" style = "color: bluegray">Masters of Science in Computer Science </a> student passionate about coding, data science, and game theory. </tab1> 
+  Experienced in computational mathematical economics through both theoretical and practical applications of game theory, probability theory, economic theory, socioeconomic theory, and advanced statistical modeling. 
+  Worked in community engagement, journalism, and on various teams. 
+  Honed verbal and written communication skills as a multimedia journalist at The Colorado College Catalyst, The Colorado Springs Independent, and KKTV News.
 </p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h6>Programming Languages</h6>
+      <ul style="list-style-type:circle""color: #303030"
+      "font-family:Verdana, sans-serif">
+      <li> Java </li>
+      <li> C </li>
+      <li> Bash</li>
+      <li> Python </li>
+      <li> Ruby </li>
+      <li> R </li>
+      <li> STATA </li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h6>Technical Skills</h6>
+      <ul style="list-style-type:circle""color: #303030"
+      "font-family:Verdana, sans-serif" "font-size: 10px">
+      <li> Agile proccess development </li>
+      <li> Executed software development and the usage of software development tools</li>
+      <li> Fluent in Object-oriented programming</li>
+      <li> Experienced in Procedural Programming </li>
+      <li> Skilled in using debuggers, editors and file systems </li>
+      <li> Understood and Implemented dynamic memory allocation </li>
+      <li> Well-versed in data analysis</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h6>Soft Skills</h6>        
+      <ul style="list-style-type:circle""color: #303030"
+      "font-family:Verdana, sans-serif">
+      <li> Adaptibility/Flexibility </li>
+      <li> Teamwork/Collaboration </li>
+      <li> Communication </li>
+      <li> Problem Solving </li>
+      <li> Critical Thinking </li>
+      <li> Leadership </li>
+      <li> Decisiveness </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <button type="button" class="btn btn-outline-primary" href = "#"> Show this project >> </button>
+    </div>
+    
+</div>
+<div class = "container">
+    <div class="row">
+    <div class="col">
+      <h3>Project 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <button type="button" class="btn btn-outline-primary" href = "#"> Show this project >> </button>
+    </div>
+    </div>
+    </div>
+
 </body>
 </html>
