@@ -4,7 +4,7 @@ RSpec.describe "projects/new", type: :view do
   before(:each) do
     assign(:project, Project.new(
       title: "MyString",
-      descrition: "MyText"
+      description: "MyText"
     ))
   end
 

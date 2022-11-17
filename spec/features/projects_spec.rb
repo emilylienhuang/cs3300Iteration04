@@ -44,7 +44,7 @@ RSpec.feature "Projects", type: :feature do
     end
   end
 
-## Add the following code but comment it out. We are working on getting this to work
+# Add the following code but comment it out. We are working on getting this to work
 #  context "Remove existing project" do
 #    let!(:project) { Project.create(title: "Test title", description: "Test content") }
 #    scenario "remove project" do
