@@ -59,6 +59,8 @@ RSpec.feature "Projects", type: :feature do
   #above, project creation would fail  if the descrition field was entered in blank on the form
   #when you click the button to update the project the error Description can't be blank should be displayed on the screen
 
+  #adding something
+
 # Add the following code but comment it out. We are working on getting this to work
 #  context "Remove existing project" do
 #    let!(:project) { Project.create(title: "Test title", description: "Test content") }
