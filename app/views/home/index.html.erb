@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head> #heading of the website
+    <meta charset="UTF-8"> #utf 8 styling to fit all kinds of devices
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> #also used to fit all kinds of devices
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> #choosing which web browser will be preferred/acceptable
     <title>CS3300 Portfolio Project</title>
 
   </head>
   
   <body>
-    <div style="margin: 5% 0 0 10%;">
-    <h1>Projects</h1>   
-    <h1>CS 3300 Portfolio Project - Fall 2022</h1>
+    <div style="margin: 5% 0 0 10%;"> #create a margin using percentages of the screen
+    <h1>Projects</h1>    #project heading
+    <h1>CS 3300 Portfolio Project - Fall 2022</h1> #details which project we are working with
 
-      <div style="padding-left: 2rem;">
-        <h4 style="color: blue"> Emily Ng </h3>
+      <div style="padding-left: 2rem;"> #little padding on the display to move it over
+        <h4 style="color: blue"> Emily Ng </h4>  #using CSS to make my name blue and HTML to make my name a heading
         
 
         <!--- Explain what the block of code below this line is doing --->
 
-        <% if user_signed_in? %>
+        <% if user_signed_in? %> #if the user is able to sign in 
           
-          <div> Welcome <%= current_user.email %> </div>
-          <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
+          <div> Welcome <%= current_user.email %> </div> #display welcome and the user's email in it's own bottstrap divider
+          <%= button_to "Sign out", destroy_user_session_path, method: :delete %> #can use sign out button to render the paths only accessible to the user inaccessible
         
         <% else %>
-          <a href="/users/sign_in"> Sign in</a>
+          <a href="/users/sign_in"> Sign in</a> #otherwise, prompt the user with  a sign in link that will lead to a sign in page
         <% end %>
 
       </div>
