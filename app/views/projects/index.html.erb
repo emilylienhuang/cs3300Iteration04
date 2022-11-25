@@ -111,6 +111,18 @@ tab1 { padding-left: 4em; }
 <div class="container">
   <div class="row">
     <div class="col">
+    <div id="projects">
+  <% @projects.each do |project| %>
+    
+    <%= render project %>
+    <p>
+      <%= link_to "Show this project", project %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New project", new_project_path %>
+
       <h3>Project 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -119,7 +131,8 @@ tab1 { padding-left: 4em; }
       <h3>Project 2</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <button type="button" class="btn btn-outline-primary" href = "#"> Show this project >> </button>
+      <button type="button" class="btn btn-outline-primary"> Show this project >> </button>
+      
     </div>
     
 </div>
