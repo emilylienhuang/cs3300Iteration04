@@ -28,6 +28,7 @@ tab1 { padding-left: 4em; }
 
 </style>
 </head>
+
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -119,9 +120,10 @@ tab1 { padding-left: 4em; }
     <a>
       <%= link_to "Show this project", project, class: "btn btn-primary"%>
     </a>
-
+</div>
     </div>
   <% end %>
+  <%= link_to "New project", new_project_path %>
 </div>
 
       
