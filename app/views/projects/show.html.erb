@@ -41,10 +41,10 @@ tab1 { padding-left: 4em; }
 </p>
 
 <div class="card", style="margin: 1rem;">
-    <%= link_to "Edit this project", edit_project_path(@project), class: "btn btn-primary"%>
+    <%= link_to "Edit this project", edit_project_path(@project), class: "btn btn-outline-primary"%>
     <br>
-    <%= link_to "Back to projects", projects_path, class: "btn btn-primary"%>
+    <%= link_to "Back to projects", projects_path, class: "btn btn-outline-danger"%>
     <br>
-    <%= link_to "Destroy this project", @project, method: :delete, class: "btn btn-primary"%>
+    <%= link_to "Destroy this project", @project, method: :delete, class: "btn btn-outline-warning"%>
   
 </div>
